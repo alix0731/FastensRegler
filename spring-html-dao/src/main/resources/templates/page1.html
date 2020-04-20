@@ -28,13 +28,29 @@
         }
     </style>
 
+    <style>
+        .resp-container{
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+        }
+        .resp-iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+
 </head>
 
 <body>
 
     <header>
         <div id="bg">
-            <h1>Fasten og den regler</h1>
+            <h1>Fasten og dens regler</h1>
             <p>Ramadan kareem</p>
         </div>
 
@@ -98,6 +114,9 @@
 
             <p ID="pad">Mere detajleret beskrivelse af reglerne kan findes i <a href="https://www.slideshare.net/kingabid/mukhtasar-alquduri?fbclid=IwAR0UESyIrzbHjvm9NuL1Y44vh1QxabqByGUJXS81DyHknPu4MnJK5PDvi1g">Mukhtasar Al-Quduri</a> </p>
 
+            <hr/>
+
+
         </article>
 
 
@@ -105,8 +124,12 @@
     </main>
 
     <footer>
-        <iframe id="pad" width="560" height="315" src="https://www.youtube.com/embed/V5GL3Ek9r9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe id="pad" width="560" height="315" src="https://www.youtube.com/embed/Z9VxZfNUaDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="resp-container">
+            <iframe class="resp-iframe" id="pad" width="560" height="315" src="https://www.youtube.com/embed/V5GL3Ek9r9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="resp-container">
+            <iframe class="resp-iframe" id="pad" width="560" height="315" src="https://www.youtube.com/embed/Z9VxZfNUaDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </footer>
 </body>
 </html>
